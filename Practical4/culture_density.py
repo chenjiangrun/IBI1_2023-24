@@ -6,5 +6,3 @@ while a <= 90 :
 b="the density of cells will be over 90% on "
 c=" day"
 print(b+str(i)+c)
-
-    
