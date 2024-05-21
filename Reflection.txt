@@ -1,1 +1,2 @@
 During this course, I have learnt version control, how to navigate Unix-like systems and how to write simple programs in Python.
+And I also learnt that how to process the data in the complex txt by using code.

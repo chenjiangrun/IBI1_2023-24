@@ -1,7 +1,8 @@
 import numpy as np
 import matplotlib . pyplot as plt
-N = 10000  
-S = N - 1  
+
+number = 10000  
+S = number - 1  
 I = 1      
 R = 0      
 
@@ -20,7 +21,7 @@ for t in range(1000):
     # Calculate the number of new infections and recoveries
     # The probability of a susceptible individual becoming infected is beta * (I/N)
     # The probability of an infected individual recovering is gamma
-    new_infections = np.random.choice([0, 1], size=S, p=[1 - beta * (I/N), beta * (I/N)])
+    new_infections = np.random.choice([0, 1], size=S, p=[1 - beta * (I/number), beta * (I/number)])
     new_recoveries = np.random.choice([0, 1], size=I, p=[1 - gamma, gamma])
 
     I += np.sum(new_infections) - np.sum(new_recoveries)

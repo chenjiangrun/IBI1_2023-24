@@ -26,9 +26,9 @@ def compare_two_sequences(seq1_path, seq2_path, blosum62_matrix):
 def main():
     blosum62_matrix = bl.BLOSUM(62)
     
-    human_seq_path = r'c:\Users\lhx\Desktop\IBI1\IBI1_2023-24\Practical13\SLC6A4_HUMAN.fa'
-    mouse_seq_path = r'c:\Users\lhx\Desktop\IBI1\IBI1_2023-24\Practical13\SLC6A4_MOUSE.fa'
-    rat_seq_path = r'c:\Users\lhx\Desktop\IBI1\IBI1_2023-24\Practical13\SLC6A4_RAT.fa'
+    human_seq_path = r'c:\Users\CJR\IBI\IBI1_2023-24\Practical13\SLC6A4_HUMAN.fa'
+    mouse_seq_path = r'c:\Users\CJR\IBI\IBI1_2023-24\Practical13\SLC6A4_MOUSE.fa'
+    rat_seq_path = r'c:\Users\CJR\IBI\IBI1_2023-24\Practical13\SLC6A4_RAT.fa'
     
     comparisons = [
         (human_seq_path, mouse_seq_path, 'Human', 'Mouse'),

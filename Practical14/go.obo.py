@@ -47,7 +47,7 @@ def parse_with_sax(xml_file):
     return handler.counts
 
 
-xml_file = 'c:/Users/lhx/Desktop/IBI1/IBI1_2023-24/Practical14/go_obo.xml'
+xml_file = 'c:/Users/CJR/IBI/IBI1_2023-24/Practical14/go_obo.xml'
 
 
 start_time_dom = datetime.datetime.now()
@@ -87,7 +87,6 @@ sax_time = (end_time_sax - start_time_sax).total_seconds()
 
 print(f"DOM API took {dom_time} seconds")
 print(f"SAX API took {sax_time} seconds")
-
 
 if dom_time < sax_time:
     print("# DOM API was faster")

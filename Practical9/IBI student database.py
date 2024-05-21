@@ -10,13 +10,7 @@ class Student:
         print(f"Name: {self.name}, Major: {self.major}, Code Portfolio Score: {self.code_portfolio_score}, "
               f"Group Project Score: {self.group_project_score}, Exam Score: {self.exam_score}")
 
-# Example
+# For Example:
 if __name__ == "__main__":
-    student1 = Student(
-        name="Chen Jiangrun",
-        major="BMI",
-        code_portfolio_score=60,
-        group_project_score=60,
-        exam_score=60
-    )
+    student1 = Student( name="Chen Jiangrun", major="BMI",code_portfolio_score=60, group_project_score=60, exam_score=60)
     student1.print_details()

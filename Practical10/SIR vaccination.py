@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib import cm
 
-N = 10000
+number = 10000
 beta = 0.3
 gamma = 0.05
 
@@ -10,8 +10,8 @@ vaccination_rates = np.arange(0, 1.1, 0.1)
 I_arrs = []
 
 for vaccination_rate in vaccination_rates:
-    V = vaccination_rate * N
-    S = N - V
+    V = vaccination_rate * number
+    S = number - V
     I = 1
     R = 0
 
@@ -23,7 +23,7 @@ for vaccination_rate in vaccination_rates:
         if S == 0:
             break
 
-        contact_rate = beta * (I / (N - V))
+        contact_rate = beta * (I / (number - V))
         new_infections = np.random.choice([0, 1], size=int(S), p=[1 - contact_rate, contact_rate])
         new_recoveries = np.random.choice([0, 1], size=I, p=[1 - gamma, gamma])
 
