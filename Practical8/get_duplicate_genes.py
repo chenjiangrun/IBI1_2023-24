@@ -1,5 +1,5 @@
 from Bio import SeqIO
-input_file = "c:/Users/lhx/Desktop/IBI1/IBI1_2023-24/Practical8/Saccharomyces_cerevisiae.R64-1-1.cdna.all.fa"
+input_file = "c:/Users/CJR/Desktop/IBI1/IBI1_2023-24/Practical8/Saccharomyces_cerevisiae.R64-1-1.cdna.all.fa"
 output_file = "duplicate_genes.fa"
 keyword = "duplication"
 
